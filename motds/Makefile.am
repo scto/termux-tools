@@ -45,6 +45,17 @@ motd:
 
 	@echo "Welcome to Android AppStudio!" > motd
 	@echo "" >> motd
+	@echo "Social" >> motd
+	@echo "" >> motd
+	@echo "Discord:  https://discord.gg/RM5qaZs4kd" >> motd
+	@echo "Instagram:  https://www.instagram.com/innovative_cst" >> motd
+	@echo "YouTube:  https://youtube.com/@innovative-cst" >> motd
+	@echo "X:  https://x.com/Innovative_cst" >> motd
+	@echo "" >> motd
+	@echo "Donate" >> motd
+	@echo "" >> motd
+	@echo "Patreon:  https://www.patreon.com/DevKumar" >> motd
+	@echo "" >> motd
 
 	@echo "" >> motd
 	@echo "Working with packages:" >> motd
@@ -53,16 +64,6 @@ motd:
 	@echo " - Install: pkg install <package>" >> motd
 	@echo " - Upgrade: pkg upgrade" >> motd
 
-    ifeq ($(TERMUX_PACKAGE_MANAGER),apt)
-		@echo "" >> motd
-		@echo "Subscribing to additional repositories:" >> motd
-		@echo "" >> motd
-		@echo " - Root:    pkg install root-repo" >> motd
-		@echo " - X11:     pkg install x11-repo" >> motd
-		@echo "" >> motd
-		@echo "For fixing any repository issues," >> motd
-		@echo "try 'termux-change-repo' command." >> motd
-    endif
-
 	@echo "" >> motd
-	@echo "Report issues at https://termux.dev/issues" >> motd
+	@echo "Report packages issues at https://github.com/Innovative-CST/termux-packages/issues" >> motd
+	@echo "Report app issues at https://github.com/Innovative-CST/AndroidAppStudio/issues" >> motd
