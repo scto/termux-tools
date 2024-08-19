@@ -10,6 +10,6 @@ case "${TERMUX__USER_ID:-}" in ''|*[!0-9]*|0[0-9]*) TERMUX__USER_ID=0;; esac
 
 am startservice \
 	--user "$TERMUX__USER_ID" \
-	-a com.icst.android.appstudio.service_wake_unlock \
-	com.icst.android.appstudio/com.icst.android.appstudio.app.TermuxService \
+	-a "@TERMUX_APP_PACKAGE@.service_wake_unlock" \
+	"@TERMUX_APP_PACKAGE@/@TERMUX_APP_PACKAGE@.app.TermuxService" \
 	> /dev/null
