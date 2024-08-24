@@ -43,14 +43,10 @@ $(eval $(call process-rule,motd.sh))
 motd:
 	@echo "Creating motd file"
 
-	@echo "Welcome to Android AppStudio!" > motd
+	@echo "Welcome to Android CodeStudio!" > motd
 	@echo "" >> motd
 	@echo "" >> motd
-	@echo "Discord:  https://discord.gg/RM5qaZs4kd" >> motd
-	@echo "Instagram:  https://www.instagram.com/innovative_cst" >> motd
-	@echo "YouTube:  https://youtube.com/@innovative-cst" >> motd
-	@echo "X:  https://x.com/Innovative_cst" >> motd
-	@echo "Patreon:  https://www.patreon.com/DevKumar" >> motd
+	@echo "YouTube:  https://youtube.com/@scto" >> motd
 	@echo "" >> motd
 
 	@echo "" >> motd
@@ -61,5 +57,5 @@ motd:
 	@echo " - Upgrade: pkg upgrade" >> motd
 
 	@echo "" >> motd
-	@echo "Report packages issues at https://github.com/Innovative-CST/termux-packages/issues" >> motd
-	@echo "Report app issues at https://github.com/Innovative-CST/AndroidAppStudio/issues" >> motd
+	@echo "Report packages issues at https://github.com/scto/termux-packages/issues" >> motd
+	@echo "Report app issues at https://github.com/scto/AndroidCodeStudio/issues" >> motd
